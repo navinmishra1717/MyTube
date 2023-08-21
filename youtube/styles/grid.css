@@ -1,15 +1,5 @@
-p {
-  font-family: Roboto, Arial;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .thumbnail {
   width: 100%;
-}
-
-.search-bar {
-  display: block;
 }
 
 .video-grid {
@@ -17,9 +7,6 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
-}
-
-.video-preview {
 }
 
 .video-info-grid {
