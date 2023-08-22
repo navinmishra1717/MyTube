@@ -27,4 +27,22 @@ that has rows and columns. More rigid as it depends on column numbers definition
 elements are aligned horizontally. default is start. other values are start,
 end, space-between. align-items: used to determine how the elements are aligned
 vertically. default is stretch. other values are start, end, center. eg.
-align-items: center -- elements are vertically centered in this case.
+align-items: center -- elements are vertically centered in this case. ########
+## position: property to determine the position of the element. default is
+static. eg. static, fixed, absolute, relative. position property has four
+special properties: top, left, right, bottom. for eg: left:0 tells how much
+space is between the element and left edge of the browser window(or page in
+absolute case). If we set it in opposite direction, the element will stretch.
+fixed: element is fixed and floats in same position and placed in browser
+window. absolute: same as fixed but placed in page. When we scroll, browser
+window does not move but rather page moves. imp: if position absolute is inside
+the position fixed, it behaves relative to the position fixed element. Also if
+position absolute is inside the position relative, it behaves relative to that
+position relative element as well but position relative element will be deplayed
+normally. i.e scrolls with page. ###############################################
+## z-index: elements written below is appeared in the front of the above
+element. but this rule doesnot apply to position static elements. i.e position
+static always appears at the back. but if it's relative or fixed, and written
+below, it appears in the front of the above element. However, this can be
+controlled by using z-index. Default value of z-index is 0. the higher the
+value, the front it will be appeared at.
