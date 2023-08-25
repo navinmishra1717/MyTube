@@ -9,6 +9,23 @@
   row-gap: 40px;
 }
 
+@media (max-width: 768px) {
+  /* css inside this only activate if the screen size is 750px or less */
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
+}
+
+@media (min-width: 1280px) {
+  /* css inside this only activate if the screen size is 1000px or bigger */
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .video-info-grid {
   display: grid;
   grid-template-columns: 50px 1fr;
@@ -33,7 +50,6 @@
 }
 
 .video-time {
-  font-family: Roboto, Arial;
   font-size: 12px;
   font-weight: 500;
   position: absolute;
