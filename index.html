@@ -36,6 +36,9 @@
         </button>
       </div>
       <div class="right-section">
+        <div class="darkmode-container" onclick="darkMode()">
+          <img src="./icons/dark.png" alt="dark" class="dark-icon" />
+        </div>
         <div class="upload-icon-container">
           <img src="./icons/upload.svg" alt="upload" class="upload-icon" />
           <div class="tooltip">Create</div>
@@ -247,5 +250,12 @@
         </div>
       </section>
     </main>
+
+    <script>
+      function darkMode() {
+        var element = document.body;
+        element.classList.toggle('dark-mode');
+      }
+    </script>
   </body>
 </html>

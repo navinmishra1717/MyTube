@@ -29,12 +29,19 @@
 }
 
 .right-section {
-  width: 180px;
+  width: 240px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-right: 20px;
   flex-shrink: 0; /* property to make don't shrink */
+}
+
+.dark-icon {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  cursor: pointer;
 }
 
 .hamburger {
